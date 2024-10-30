@@ -1,0 +1,80 @@
+
+@import url('https://cdn.staticfile.org/cropper/3.0.0/cropper.min.css');
+@import url('https://cdn.staticfile.org/font-awesome/6.0.0/css/all.min.css');
+
+.avatar-area {
+    position: relative;
+    width: 500px;
+    height: 400px;
+    background-color: #F7F8F9;
+}
+.avatar-template, .avatar-template-base {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: 2;
+}
+.avatar-button-group {
+    margin: 0px auto 10px auto;
+    width: 100%;
+    padding: 10px 0 10px 3px;
+    text-align: center;
+    border: 1px solid #eeeeee;
+    border-left: 0;
+    border-right: 0;
+}
+.avatar-button-group button.btn.btn-primary {
+    background-color: #aaaaaa;
+    color: white;
+    height: 32px;
+}
+.cropper-face {
+    z-index: 3;
+}
+#avatar-container {
+    display: none;
+}
+.avatar-button-group {
+    font-size: 0;
+}
+.avatar-button-group button {
+    width: 12%;
+    margin: 0 auto;
+    background-color: grey;
+    color: white;
+    border: 1px solid #aaaaaa;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 0;
+}
+.avatar-button-group button:hover {
+    border-color: black;
+}
+.filter {
+    -webkit-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+.cropper-view-box {
+    outline: none;
+}
+.flex-viewport {
+    height: fit-content !important;
+}
+
+/* cart */
+.wp-block-group.alignwide {
+    padding: 20px 0!important;
+}
+.wp-block-post-title.alignwide {
+    margin-bottom: 20px !important;
+}
+.wp-block-spacer {
+    height: 0 !important;
+}
+.entry-content.wp-block-post-content,.wp-block-spacer {
+    margin-top: 0 !important;
+}
+/* cart end */
